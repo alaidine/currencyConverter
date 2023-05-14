@@ -3,10 +3,8 @@
 </script>
 
 <main>
-	<h1>let's build a currency converter app!</h1>
-
-	<Input />
-	<Input />
+	<Input value="to be converted"/>
+	<Input value="converted value"/>
 </main>
 
 <style>
