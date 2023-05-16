@@ -3,8 +3,21 @@
 </script>
 
 <main>
-	<Input value="to be converted"/>
-	<Input value="converted value"/>
+	<div>
+		<Input />
+		<select>
+			<option>euro</option>
+			<option>dollar</option>
+		</select>
+	</div>
+
+	<div>
+		<Input />
+		<select>
+			<option>euro</option>
+			<option>dollar</option>
+		</select>
+	</div>
 </main>
 
 <style>
