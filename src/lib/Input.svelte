@@ -1,5 +1,6 @@
 <script>
-	// export let value;
+	export let value;
 </script>
 
-<input>
+<label>{value}</label>
+<input type="text">

@@ -3,21 +3,23 @@
 </script>
 
 <main>
-	<div>
-		<Input />
-		<select>
-			<option>euro</option>
-			<option>dollar</option>
-		</select>
-	</div>
+	<form>
+		<div>
+			<Input value="value to be converted" />
+			<select>
+				<option>euro</option>
+				<option>dollar</option>
+			</select>
+		</div>
 
-	<div>
-		<Input />
-		<select>
-			<option>euro</option>
-			<option>dollar</option>
-		</select>
-	</div>
+		<div>
+			<Input value="converted value" />
+			<select>
+				<option>euro</option>
+				<option>dollar</option>
+			</select>
+		</div>
+	</form>
 </main>
 
 <style>
