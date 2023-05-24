@@ -4,21 +4,8 @@
 
 <main>
 	<form>
-		<div>
-			<Input value="value to be converted" />
-			<select>
-				<option>euro</option>
-				<option>dollar</option>
-			</select>
-		</div>
-
-		<div>
-			<Input value="converted value" />
-			<select>
-				<option>euro</option>
-				<option>dollar</option>
-			</select>
-		</div>
+		<Input value="value to be converted" />
+		<Input value="converted value" />
 	</form>
 </main>
 
