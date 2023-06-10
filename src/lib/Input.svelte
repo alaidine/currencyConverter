@@ -1,16 +1,42 @@
 <script>
-	export let value;
-	let selected;
+	import axios from "axios"
 
-	let currencies = []
+	export let value;
+	let inputValue;
+	let selected;
+	let currency;
+	let convertedCurrency; 
+	let convertRate;
+
+	async function getConvertRates(currency) {
+		const url = ` https://v6.exchangerate-api.com/v6/71f78204cab2a73255f815c1/latest/${currency}`
+
+		const res = await axios.get(url)
+		.then(response => {
+			return response.data.conversion_rates
+		})
+		.catch(error => {
+			console.log(error)
+		})
+
+		return res
+	}
+
+	function onChange() {
+		console.log(`${value} option has been changed`)
+
+		console.log(getConvertRate(selected))
+	}
+
 </script>
 
 <div>
 	<!-- svelte-ignore a11y-label-has-associated-control -->
 	<label>{value}</label>
-	<input type="text">
+	<input bind:value={inputValue} type="text">
 
-	<select vind:value={selected} on:change={() => console.log("value changed")}>
+	<select bind:value={selected} on:change={onChange}>
+		<option>--</option>
 		<option>USD</option>
 		<option>AED</option>
 		<option>AFN</option>

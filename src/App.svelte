@@ -4,8 +4,8 @@
 
 <main>
 	<form>
-		<Input value="value to be converted" />
-		<Input value="converted value" />
+		<Input value="currency" />
+		<Input value="converted currency" />
 	</form>
 </main>
 
